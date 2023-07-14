@@ -1,0 +1,15 @@
+[package]
+name = "tricoder"
+version = "0.1.0"
+authors = ["Stephen Ezekwem <stephen.ezekwem@ezektec.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+thiserror = "1.0.43"
+rayon = "1.5"
+trust-dns-resolver = "0.21"
+reqwest = { version = "0.11", default-features = false, features = ["json", "blocking", "rustls-tls"]}
+serde = { version = "1", features = ["derive"] }
